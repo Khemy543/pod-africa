@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+
+.app-button {
+  @apply text-base font-medium rounded-full px-6 py-2;
+}
+
+h3 {
+  @apply text-3xl font-bold font-roboto;
+}
+
+h5 {
+  @apply text-2xl font-bold font-roboto text-primary-green;
+}
+@tailwind utilities;
