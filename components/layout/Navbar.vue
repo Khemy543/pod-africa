@@ -6,13 +6,13 @@
     >
       <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
         <div class="flex items-center justify-between w-full md:w-auto">
-          <a href="#">
+          <nuxt-link to="/">
             <span class="sr-only">Workflow</span>
             <img
               class="h-8 w-auto sm:h-16 object-cover object-center"
               src="~/static/images/logo.png"
             />
-          </a>
+          </nuxt-link>
           <div class="-mr-2 flex items-center md:hidden">
             <button
               type="button"
@@ -50,10 +50,10 @@
         >
 
         <nuxt-link to="/business" class="font-semibold text-primary-yellow font-source-sans"
-          >Business</nuxt-link
+          >As a Business</nuxt-link
         >
 
-        <nuxt-link to="#" class="app-button bg-gray-900 text-white font-source-sans"
+        <nuxt-link to="/contact-us" class="app-button bg-gray-900 text-white font-source-sans"
           >Join Us</nuxt-link
         >
       </div>
