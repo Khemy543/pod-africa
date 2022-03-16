@@ -14,7 +14,7 @@
       </div>
 
       <div class="mt-20 max-w-2xl mx-auto">
-        <form action="" class="space-y-14">
+        <form action="" class="space-y-10">
           <div class="flex">
             <div class="w-1/2">
               <label
@@ -36,8 +36,8 @@
             </div>
           </div>
 
-          <div class="flex space-x-4">
-            <div class="w-1/2">
+          <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-10 lg:space-y-0">
+            <div class="w-full lg:w-1/2">
               <label for="fullname" class="text-base font-normal font-source-sans">Full name *</label>
               <div>
                 <input
@@ -48,7 +48,7 @@
                 />
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full lg:w-1/2">
               <label for="email" class="text-base font-normal font-source-sans">Email address *</label>
               <div>
                 <input
@@ -61,8 +61,8 @@
             </div>
           </div>
 
-          <div class="flex space-x-4">
-            <div class="w-1/2">
+          <div class="flex flex-col lg:flex-row lg:space-x-4">
+            <div class="w-full lg:w-1/2">
               <label for="phone" class="text-base font-normal font-source-sans">Contact numbers *</label>
               <div>
                 <input
