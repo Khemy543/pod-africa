@@ -6,7 +6,7 @@
 
       <h3 class=" text-center text-primary-green">Our Investment Ethos</h3>
 
-      <div class=" px-20 mt-16">
+      <div class=" lg:px-20 mt-16">
         <p class=" font-light text-base text-center font-roboto">
           As a fund, our intention is to enable great innovators utilizing 4IR
           tools to solve everyday challenges on the continent. We seek out profitable

@@ -5,7 +5,7 @@
     <div
       class="w-full mt-14 bg-primary-yellow-light py-14 px-4 sm:px-6 lg:px-8"
     >
-      <div class="max-w-6xl mx-auto px-4 grid grid-cols-4 gap-24">
+      <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-24">
         <img v-for="n in images" :key="n.id" :src="n.image" :alt="n.name" />
       </div>
     </div>

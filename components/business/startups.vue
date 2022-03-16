@@ -1,9 +1,9 @@
 <template>
   <section class="mt-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <h3 class="text-center text-primary-yellow">Start Ups</h3>
-    <div class="w-full mt-14 bg-white py-14 px-4 sm:px-6 lg:px-8 flex">
-      <div class="w-2/5 ">
-        <div class=" w-full border border-black hero px-8 py-16 rounded-3xl">
+    <div class="w-full mt-14 bg-white py-14 flex flex-col lg:flex-row">
+      <div class="w-full lg:w-2/5 ">
+        <div class=" w-full border border-black hero lg:px-8 py-16 rounded-3xl">
           <h4
             class="text-center font-medium text-2xl font-roboto text-primary-yellow"
           >
@@ -37,7 +37,7 @@
           </div>
         </div>
       </div>
-      <div class="w-3/5 h-full flex items-center">
+      <div class="w-full lg:w-3/5 h-full flex items-center">
         <img src="~/static/images/start-ups-bg-2.png" alt="" />
       </div>
     </div>

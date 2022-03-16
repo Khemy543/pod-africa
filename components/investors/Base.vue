@@ -1,9 +1,9 @@
 <template>
   <section class="bg-primary-yellow-light py-40">
     <div
-      class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 grid-x-10"
+      class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1  lg:grid-cols-2 grid-x-10"
     >
-      <div class="bg-white px-40 py-20 rounded-xl">
+      <div class="bg-white px-20 lg:px-40 py-20 rounded-xl">
         <button class="app-button bg-primary-yellow text-white">
           Join the journey
         </button>

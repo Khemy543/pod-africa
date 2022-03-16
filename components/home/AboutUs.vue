@@ -5,14 +5,14 @@
     <div
       class="w-full mt-14 bg-primary-yellow-light py-14 px-4 sm:px-6 lg:px-8"
     >
-      <div class="max-w-6xl mx-auto px-4 flex">
-        <div class="w-1/2 flex justify-center">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-col">
+        <div class="w-full lg:w-1/2 flex justify-center">
           <div class="space-y-4">
             <img src="~/static/images/about-1.png" alt="" />
             <img src="~/static/images/about-2.png" alt="" />
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
           <h5>Vision</h5>
           <p class="text-base font-normal font-source-sans text-gray-900 mt-6">
             Inspire a sense of belief in an African future – Create a growth
