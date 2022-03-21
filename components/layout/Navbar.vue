@@ -166,4 +166,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.nuxt-link-exact-active {
+  @apply text-primary-green;
+}
+</style>
