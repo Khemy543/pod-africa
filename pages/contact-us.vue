@@ -83,11 +83,15 @@
               <button class="app-button bg-primary-yellow text-white">Submit</button>
             </div>
           </div>
-          <div v-if="type === 'company'">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLScGzHl8tBL5OJdP6Z7LFvpkzKxy5fV4IV34nPFXOoCHjOTlew/viewform"
-              frameborder="0"
-            ></iframe>
+          <div v-if="type === 'company'" class="w-full h-full">
+            <div class=" mt-10">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScGzHl8tBL5OJdP6Z7LFvpkzKxy5fV4IV34nPFXOoCHjOTlew/viewform"
+                frameborder="0"
+                height="600"
+                width="100%"
+              ></iframe>
+            </div>
           </div>
         </form>
       </div>

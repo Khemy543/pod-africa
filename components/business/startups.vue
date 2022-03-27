@@ -2,7 +2,7 @@
   <section class="mt-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <h3 class="text-center text-primary-yellow">Start Ups</h3>
     <div class="w-full mt-14 bg-white py-14 flex flex-col lg:flex-row">
-      <div class="w-full lg:w-2/5 ">
+      <div class="w-full lg:w-2/5 relative z-20">
         <div class=" w-full border border-black hero lg:px-8 py-16 rounded-3xl">
           <h4
             class="text-center font-medium text-2xl font-roboto text-primary-yellow"
@@ -37,8 +37,8 @@
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-3/5 h-full flex items-center">
-        <img src="~/static/images/start-ups-bg-2.png" alt="" />
+      <div class="w-full lg:w-3/5 h-full flex items-center my-auto relative">
+        <img src="~/static/images/start-ups-bg-2.png" alt="" class=" lg:absolute lg:-left-36 z-10" />
       </div>
     </div>
   </section>

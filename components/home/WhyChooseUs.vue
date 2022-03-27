@@ -18,11 +18,12 @@
           </div>
 
           <div class="items-end hidden lg:block">
-            <button
+            <nuxt-link
+              to="/contact-us"
               class="app-button absolute bottom-10 bg-primary-yellow text-white"
             >
               Join the Journey
-            </button>
+            </nuxt-link>
           </div>
         </div>
 
@@ -37,11 +38,11 @@
         <img src="~/static/images/why-choose-us.png" alt="why choose us" />
 
         <div class="lg:hidden">
-          <button
+          <nuxt-link to="/contact-us"
             class="app-button bg-primary-yellow text-white"
           >
             Join the Journey
-          </button>
+          </nuxt-link>
         </div>
       </div>
     </div>

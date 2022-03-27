@@ -59,6 +59,7 @@
 
         <nuxt-link
           to="/contact-us"
+          style="color:white !important;"
           class="app-button bg-gray-900 text-white font-source-sans"
           >Join Us</nuxt-link
         >

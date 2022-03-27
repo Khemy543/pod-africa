@@ -12,8 +12,9 @@
               We are poised to connect African ingenuity to the world
               in a controlled, scalable and profitable manner.
             </p>
-
-            <button class="app-button bg-primary-yellow text-white mt-6">Join Us</button>
+            <div class="mt-6">
+              <nuxt-link to="/contact-us" class="app-button bg-primary-yellow text-white">Join Us</nuxt-link>
+            </div>
         </div>
       </div>
     </div>
