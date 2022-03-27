@@ -2,9 +2,9 @@
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class=" w-full h-full mt-16 relative">
       <img src="~/static/images/home-banner.png" alt="home banner" class=" w-full h-full"/>
-      <div class=" w-1/2 absolute rounded-3xl bg-overlay px-10 py-5 bottom-10 left-10">
+      <div class=" w-full lg:w-1/2 absolute rounded-3xl bg-overlay px-10 py-5 -bottom-1/2 lg:bottom-10 lg:left-10">
         <div>
-            <h4 class=" font-source-sans font-bold text-3xl text-white">Building an Africa to last generations</h4>
+            <h4 class=" font-source-sans font-bold text-xl lg:text-3xl text-white">Building an Africa to last generations</h4>
 
             <p class=" text-sm font-normal font-source-sans text-white mt-5">
               PoD Africa is set out to be the bridge that converts the

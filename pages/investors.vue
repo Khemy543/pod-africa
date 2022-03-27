@@ -2,7 +2,7 @@
   <div>
     <Banner />
     <OurInvestors />
-    <!-- <InvestmentProcess /> -->
+    <InvestmentProcess />
     <WhyInvestorAfrica />
     <WordOnBlock />
     <Base />

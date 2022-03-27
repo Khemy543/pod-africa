@@ -2,7 +2,7 @@
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="w-full h-full mt-16 relative">
       <img src="~/static/images/investors-banner.png" alt="home banner" class="w-full h-full" />
-      <div class="w-1/2 absolute rounded-3xl bg-overlay px-10 py-5">
+      <div class="w-full lg:w-1/2 absolute rounded-3xl bg-overlay px-10 py-5">
         <div>
           <h4
             class="font-source-sans font-bold text-3xl text-white"
