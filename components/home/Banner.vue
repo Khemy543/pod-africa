@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class=" w-full h-full mt-16 relative">
-      <img src="~/static/images/home-banner.png" alt="home banner" class=" w-full h-full"/>
+      <img src="~/static/images/home-banner.png" alt="home banner" class=" w-full" style="height:600px;"/>
       <div class=" w-full lg:w-1/2 absolute rounded-3xl bg-overlay px-10 py-5 -bottom-1/2 lg:bottom-10 lg:left-10">
         <div>
             <h4 class=" font-source-sans font-bold text-xl lg:text-3xl text-white">Building an Africa to last generations</h4>
