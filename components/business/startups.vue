@@ -1,47 +1,20 @@
 <template>
-  <section class="mt-32 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h3 class="text-center text-primary-yellow">Start Ups</h3>
-    <div class="w-full mt-14 bg-white py-14 flex flex-col lg:flex-row">
-      <div class="w-full lg:w-2/5 relative z-20">
-        <div class=" w-full border border-black hero lg:px-8 py-16 rounded-3xl">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full h-full mt-16 relative">
+      <img src="~/static/images/start-ups-bg-2.png" alt="home banner" class="w-full" style="height:600px;"/>
+      <div class="w-full lg:w-1/2 absolute rounded-3xl bg-overlay px-10 py-5">
+        <div>
           <h4
-            class="text-center font-medium text-2xl font-roboto text-primary-yellow"
-          >
-            Download Resources
-          </h4>
+            class="font-source-sans font-bold text-3xl text-white text-center"
+          >Mission to one million</h4>
 
-          <div class="mt-10 space-y-5">
-            <div
-              class="flex space-x-4 border border-white rounded-2xl p-6"
-              v-for="n in resources"
-              :key="n.id"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-primary-yellow"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"
-                />
-              </svg>
-              <h4 class="font-roboto text-white text-base font-medium">
-                {{ n.name }}
-              </h4>
-            </div>
-          </div>
+          <p class="text-sm font-normal font-source-sans text-white mt-8">
+            For the next five years PoD remains focused on enabling young businesses tap into a pool of resources (capital injection and industry expertise) that will accelerate growth and drive profitability.
+          </p>
         </div>
       </div>
-      <div class="w-full lg:w-3/5 h-full flex items-center my-auto relative">
-        <img src="~/static/images/start-ups-bg-2.png" alt="" class=" lg:absolute lg:-left-36 z-10" />
-      </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -72,9 +45,16 @@ export default {
 </script>
 
 <style scoped>
-.hero {
+/* .hero {
   background-image: url("~/static/images/stat-ups-bg.png");
   background-repeat: no-repeat;
   background-position: center;
+} */
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.71);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

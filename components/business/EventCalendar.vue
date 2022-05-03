@@ -18,32 +18,32 @@ import EventCard from "./EventCard.vue";
           {
             id: 1,
             image: '/images/events/event1.png',
-            name: 'Startups: Pros & Cons Seminar',
-            start: '13th Jan, 2022',
+            name: 'Pitching Session',
+            start: '2nd July 2022',
             end: '17th Jan, 2022',
-            location: 'Accra International Conference Center',
-            duration: '14:00hrs (GMT)',
-            phone: '055 678 4567'
+            location: 'TBD',
+            duration: '09:00hrs (GMT)',
+            phone: '055 256 7317'
           },
           {
             id: 2,
             image: '/images/events/event2.png',
-            name: 'Startups: Pros & Cons Seminar',
-            start: '13th Jan, 2022',
+            name: ' Pitching Session',
+            start: '1st October 2022',
             end: '17th Jan, 2022',
-            location: 'Accra International Conference Center',
-            duration: '14:00hrs (GMT)',
-            phone: '055 678 4567'
+            location: 'TBD',
+            duration: '09:00hrs (GMT)',
+            phone: '055 256 7317'
           },
           {
             id: 3,
             image: '/images/events/event3.png',
-            name: 'Startups: Pros & Cons Seminar',
-            start: '13th Jan, 2022',
+            name: 'Pitching Session',
+            start: '10th December 2022',
             end: '17th Jan, 2022',
-            location: 'Accra International Conference Center',
-            duration: '14:00hrs (GMT)',
-            phone: '055 678 4567'
+            location: 'TBD',
+            duration: '09:00hrs (GMT)',
+            phone: '055 256 7317'
           }
         ]
       }

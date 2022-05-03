@@ -3,7 +3,7 @@
     <Banner />
     <AboutUs />
     <OurPeople />
-    <OurPortfolio />
+    <!-- <OurPortfolio /> -->
     <WhyChooseUs />
   </div>
 </template>

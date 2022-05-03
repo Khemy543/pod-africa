@@ -2,6 +2,12 @@
   <section class="my-32 max-w-5xl mx-auto px-4 sm:px-6">
     <h3 class="text-center text-primary-yellow">Our Investment Process</h3>
 
+    <div class=" max-w-lg mx-auto mb-10">
+     <p class="text-base font-normal font-source-sans text-center text-gray-900 mt-6">
+       Our principle is simple; filter through the greatest ideas, subject them to critical scrutiny and make them immensely valuable.
+     </p>
+    </div>
+
     <div class="timeline">
       <div class="container left">
         <div class="content">
@@ -137,6 +143,7 @@ body {
   padding: 30px;
   position: relative;
   border-radius: 20px;
+  z-index: 100;
 }
 
 .container.left .content {

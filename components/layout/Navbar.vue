@@ -54,7 +54,7 @@
         <nuxt-link
           to="/business"
           class="font-semibold text-primary-yellow font-source-sans"
-          >As a Business</nuxt-link
+          >Start-Ups</nuxt-link
         >
 
         <nuxt-link
@@ -129,7 +129,7 @@
             <nuxt-link
               to="/business"
               class="block px-3 py-2 rounded-md text-base font-semibold text-primary-yellow font-source-sans hover:bg-gray-50"
-              >As a Business</nuxt-link
+              >Start-Ups</nuxt-link
             >
 
             <nuxt-link

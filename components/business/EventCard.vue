@@ -23,7 +23,7 @@
           </svg>
 
           <h4 class="font-poppins font-normal text-sm">{{ event.start }}</h4>
-          <h4 class="font-poppins font-normal text-sm">{{ event.end }}</h4>
+          <!-- <h4 class="font-poppins font-normal text-sm">{{ event.end }}</h4> -->
         </div>
 
         <div class="flex space-x-8 items-center">

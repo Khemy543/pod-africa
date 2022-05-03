@@ -12,7 +12,7 @@
       </div>
 
       <div class="mt-20 max-w-2xl mx-auto">
-        <form action>
+        <form action @submit="handleMessage">
           <div class="flex">
             <div class="w-1/2">
               <label for="investor" class="text-base font-normal font-source-sans">
@@ -37,6 +37,8 @@
                     id="fullname"
                     type="text"
                     placeholder="Full name"
+                    v-model="form.name"
+                    required
                     class="border border-gray-700 rounded-lg px-4 py-2 text-sm font-normal w-full mt-2"
                   />
                 </div>
@@ -48,6 +50,8 @@
                     id="email"
                     type="email"
                     placeholder="Email address"
+                    required
+                    v-model="form.email"
                     class="border border-gray-700 rounded-lg px-4 py-2 text-sm font-normal w-full mt-2"
                   />
                 </div>
@@ -62,6 +66,8 @@
                     id="name"
                     type="text"
                     placeholder="Contact numbers"
+                    v-model="form.number"
+                    required
                     class="border border-gray-700 rounded-lg px-4 py-2 text-sm font-normal w-full mt-2"
                   />
                 </div>
@@ -69,18 +75,20 @@
             </div>
 
             <div class="w-full">
-              <label for="message" class="text-base font-normal font-source-sans">Contact numbers *</label>
+              <label for="message" class="text-base font-normal font-source-sans">Message *</label>
               <div>
                 <textarea
                   id="message"
                   placeholder="Type here..."
+                  v-model="form.message"
+                  required
                   class="h-40 border border-gray-700 rounded-lg px-4 py-2 text-sm font-normal w-full mt-2"
                 ></textarea>
               </div>
             </div>
 
             <div class="flex justify-end">
-              <button class="app-button bg-primary-yellow text-white">Submit</button>
+              <button class="app-button bg-primary-yellow text-white" type="submit">Submit</button>
             </div>
           </div>
           <div v-show="type === 'company'" class="w-full h-full">
@@ -104,7 +112,21 @@
 export default {
   data() {
     return {
-      type: "investor"
+      type: "investor",
+      form: {}
+    }
+  },
+  methods: {
+    async handleMessage() {
+      try {
+        const response = await this.$http.post(`/`, this.form);
+
+        if (response) {
+
+        }
+      } catch (error) {
+        console.log(error)
+      }
     }
   }
 };

@@ -6,69 +6,31 @@
         <img src="~/static/images/meeting.png" alt="" />
 
         <h4 class="font-source-sans font-bold text-lg mt-6">
-          How to clear your car
+          {{ firstBlog.title }}
         </h4>
         <p class="font-source-sans text-base mt-3 text-gray-600">
-          Clearing your car from the port is one of the major problems many
-          people face when they import car(s) from abroad. Due to this we are
-          are writing this article to guide you through the process of clearing
-          your car from the port.
+          {{ firstBlog.content }}
         </p>
-        <button
-          class="bg-primary-yellow px-4 py-2 rounded-md mt-4 text-white float-right"
+        <a :href="firstBlog.link" target="_blank"
+          class="bg-primary-yellow px-4 py-2 rounded-md mt-4 text-white float-right hover:bg-primary-green transition-all ease-in"
         >
           Read more
-        </button>
+        </a>
       </div>
 
       <div class="space-y-20">
-        <div>
+        <div v-for="item in otherBlogs" :key="item.id">
           <h4 class="font-source-sans font-bold text-lg">
-            Ghana Link Network Engages Stakeholders
+            {{ item.title }}
           </h4>
           <p class="font-source-sans text-base mt-3 text-gray-600">
-            Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-            quisquam est, qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit, sed quia non numquam.
+            {{ item.content }}
           </p>
-          <button
-            class="bg-primary-yellow px-4 py-2 rounded-md mt-4 text-white float-right"
+          <a :href="item.link" target="_blank"
+            class="bg-primary-yellow px-4 py-2 rounded-md mt-4 text-white float-right hover:bg-primary-green transition-all ease-in"
           >
             Read more
-          </button>
-        </div>
-
-        <div>
-          <h4 class="font-source-sans font-bold text-lg mt-6">
-            Clearing Agents, Importers Stranded at Tema Port
-          </h4>
-          <p class="font-source-sans text-base mt-3 text-gray-600">
-            The Customs Division of the Ghana Revenue Authority (GRA)
-            is asked that importers pay all duties to
-            the Ghana commercial Bank. This move, was revealed by the  head of
-            operations at the Customs Divison of GRA Mr.
-          </p>
-          <button
-            class="bg-primary-yellow px-4 py-2 rounded-md mt-4 text-white float-right"
-          >
-            Read more
-          </button>
-        </div>
-
-        <div>
-          <h4 class="font-source-sans font-bold text-lg mt-6">
-            Customs ask Importers to pay duties at banks
-          </h4>
-          <p class="font-source-sans text-base mt-3 text-gray-600">
-            Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-            quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora.
-          </p>
-          <button
-            class="bg-primary-yellow px-4 py-2 rounded-md mt-4 text-white float-right"
-          >
-            Read more
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -76,7 +38,50 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      blog: [
+        {
+          id: 1,
+          title: "Here's why the African start-up scene is booming",
+          image: '',
+          content: 'African startups raised a record $725.6 million across 458 deals in 2018. This continues to grow reflects increasing investor confidence in startup businesses across the continent’s major hubs.',
+          link: 'https://www.weforum.org/agenda/2019/02/startup-investment-in-africa-jumped-to-record-levels-in-2018-as-later-stage-rounds-rose'
+        },
+        {
+          id: 2,
+          title: 'Start-Up scene in Ghana',
+          image: '',
+          content: "Ghana's tech startups are making a difference and is developing exceptionally fast. The capital Accra is an oasis for the innovation that will drive the countries growth.",
+          link: 'https://fairafric.com/en/start-up-scene-in-ghana/'
+        },
+        {
+          id: 3,
+          title: 'Tech in 2022: Building on the unicorn boom - African Business',
+          image: '',
+          link: 'https://african.business/2022/01/technology-information/tech-in-2022-where-next-after-pandemic-unicorn-boom/',
+          content: 'A total of 13 startups raised more than $100m in 2021 putting Africa on track for a record-breaking funding year.Agritech, healthtech, cleantech and proptech look like some of the rising sectors that could make waves in 2022'
+        },
+        {
+          id: 4,
+          title: "Digest Africa Briefs: The Most Funded Startups in Ghana",
+          image: '',
+          link: 'https://digestafrica.com/digest-africa-briefs-the-most-funded-startups-in-ghana',
+          content: 'According to the GSMA Ecosystem Accelerator, Ghana has more than 25 hubs and accelerators that foster entrepreneurship and the growth of startups.'
+        }
+      ]
+    }
+  },
+  computed: {
+    firstBlog() {
+      return this.blog[0]
+    },
+    otherBlogs() {
+      return this.blog.filter(item => item.id !== 1);
+    }
+  }
+};
 </script>
 
 <style scoped></style>

@@ -1,25 +1,30 @@
 <template>
   <div class="shadow-md rounded-lg py-5 px-6 group hover:bg-primary-green cursor-pointer transition-all ease-in">
-    <img src="~/static/images/people/daniel.png" alt="" class="mx-auto" />
+    <img :src="people.image" alt="" class=" w-32 h-32 mx-auto rounded-full object-cover object-center"/>
 
     <h4 class="text-primary-yellow text-center text-xs font-bold mt-2">
-      Daniel Levin
+      {{ people.name }}
     </h4>
     <p class="text-xm font-poppins text-primary-green text-center group-hover:text-white">
-      General Manager
+      {{ people.position }}
     </p>
     <div class="people-about mt-10">
       <p class="font-roboto italic group-hover:text-white">
-        We are the bridge connecting Africa to investor channels around the
-        globe. We understand that data is power, but know insights are the true
-        weapon.
+        {{ people.description }}
       </p>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    people: {
+      type: Object,
+      required: true
+    }
+  }
+};
 </script>
 
 <style scoped>
